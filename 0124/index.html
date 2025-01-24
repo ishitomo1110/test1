@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>単位取得試験</title>
+</head>
+<style>
+    .contents{
+        display: grid;
+        margin: 0 auto;
+        width: 800px;
+        height: 200px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        background-color: beige;
+    }
+    .box{
+        margin: 0 auto;
+        width: 100px;
+        height: 100px;
+        background-color: #00f;
+    }
+    .moji{
+        margin-top: 1px;
+    }
+    .text{
+        width: 800px;
+        height: 100px;
+        background-color: black;
+        color: white;
+        margin: 0 auto;
+
+    }
+    .img{
+        margin-top: 20px;
+        text-align: center;
+    }
+    label {
+        font:
+            1rem 'Fira Sans',
+            sans-serif;
+    }
+
+    input,label {
+        margin: 0.4rem 0;
+    }
+    textarea{
+        width: 100px;
+        height: 100px;
+    }
+    @media(max-width:767px){
+        .contents{
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+</style>
+<body>
+    <div class="contents">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="moji">テキスト1</div>
+        <div class="moji">テキスト2</div>
+        <div class="moji">テキスト3</div>
+        <div class="moji">テキスト4</div>
+    </div>
+    <div class="text">文章ダミー文章ダミー文章ダミー文章ダミー文章ダミー文章ダミー文章ダミー文章ダミー文章ダミー文章ダミー文章ダミー文章ダミー文章ダミー文章ダミー文章ダミー文章ダミー文章ダミー</div>
+    <div class="img"><img src="img/kapi.webp" alt="kapi"></div>
+    <label for="name">お名前:</label>
+    <input type="text" id="name" name="name" required minlength="4" maxlength="8" size="10" />
+    <br>
+    <label for="checkbox">返信を希望する方はチェックしてください:</label>
+    <input type="checkbox">
+    <br>
+    <label for="text">メッセージ:</label>
+    <input type="textarea" id="textarea">
+    <input type="submit" value="送信する">
+</body>
+</html>
